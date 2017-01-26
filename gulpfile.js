@@ -28,9 +28,6 @@ gulp.task('scripts', ['lint'], function() {
    .pipe(rename({ extname: '.min.js' }))
    .pipe(gulp.dest('./build/js'))
 }); 
-gulp.task('watch', function() {
-   gulp.watch('js/*.js', ['scripts']); 
-});
 
 
 
@@ -45,6 +42,7 @@ gulp.task('lint', function() {
 
 gulp.task('sass', function() {
    gulp.src('./sass/style.scss')
+   	  .pipe(plumber(plumberErrorHandler)) //give us feedback if somthing is wrong
       .pipe(sass())
       .pipe(autoprefixer({
          browsers: ['last 2 versions']
@@ -64,11 +62,14 @@ gulp.task('browser-sync', function(){
 		}
 	})
 });
+
 gulp.watch(['build/css/*.css', 'build/js/*.js']).on('change', browserSync.reload);
 
+gulp.task('watch', function() {
+   gulp.watch('js/*.js', ['scripts']); //js script
+   gulp.watch('sass/*.scss', ['sass']); //scss
+});
 
 
-gulp.task('default', ['watch', 'browser-sync']);
-
-
+gulp.task('default', ['watch', 'browser-sync', 'sass', 'scripts']);
 

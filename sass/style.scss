@@ -1,2 +1,58 @@
 // only @import files
-@import 
+@import 'variables'; //this is always goes first line
+@import 'reset'; //just file name
+
+@import 'fonts';
+@import 'content';
+@import 'mixin';
+@import 'footer';
+
+
+
+html{
+   font-size: 16px;
+   color: #ffffff;
+   font-family: 'open_sans_web', sans-serif;
+   font-weight: lighter;   
+}
+
+body{
+    background-color: black;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    height: 600px;
+    @media (min-width: $breakpoint-tablet) {
+     flex-direction: row;
+    }
+    @media (min-width: $breakpoint-desktop) {
+     justify-content: flex-start;
+    }
+}
+.logo{
+    align-self: center;
+}
+
+img{
+    max-width: 100%;
+     @media (min-width: $breakpoint-tablet) {
+     max-width: 90%;
+    }
+}
+
+.selector{
+    text-align: center;
+    @media (min-width: $breakpoint-tablet) {
+     text-align: left;
+    }
+}
+footer{
+    text-align: center;
+}
+
+
