@@ -110,7 +110,9 @@ body {
 .logo {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
-      align-self: center; }
+      align-self: center;
+  -ms-flex-preferred-size: 1 0 auto;
+      flex-basis: 1 0 auto; }
 
 img {
   max-width: 100%; }
@@ -124,5 +126,5 @@ img {
     .selector {
       text-align: left; } }
 
-footer {
-  text-align: center; }
+span {
+  text-transform: uppercase; }

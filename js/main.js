@@ -10,10 +10,18 @@ $(function(){
 		
 		$.getJSON(url)
 		.done(function(data){
-			console.log(data);
+			console.log('hello world');
+
+			// for (var i = 0; i < 12; i++) {
+			// 	console.log(data.results[i].multimedia[0].url);
+				// if 
+				// else//(if there is no photo skip it)
+			// }
+
 			$.each(data.results,function(key, value){
-				$('.content').append('<p>'+value.title+'</p><img src ="'+value.multimedia.url+'">');
-			})
+				$('.content').append('<p>'+value.title+'</p><img src ="'+value.multimedia[3].url+'">');
+				console.log(value);
+		})
 		
 		})
 

@@ -36,6 +36,9 @@ body{
 }
 .logo{
     align-self: center;
+    @media (min-width: $breakpoint-tablet) {
+
+    }
 }
 
 img{
@@ -51,8 +54,11 @@ img{
      text-align: left;
     }
 }
-footer{
-    text-align: center;
+
+
+
+span{
+    text-transform: uppercase;
 }
 
 
