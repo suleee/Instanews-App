@@ -1,0 +1,65 @@
+
+.cotainer{
+    height: auto;
+}
+
+
+li{
+    list-style-type: none;
+    }   
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;  
+    @media (min-width: $breakpoint-tablet) {
+    height: 100vh;
+
+    }
+        
+}
+
+#wrapper{
+    position: absolute;
+
+    top: 77%;
+  
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    opacity: 0.5;
+    
+    p{
+    line-height: 20px;
+    padding: 15px;
+    }
+
+}
+
+.li-article{
+         overflow: hidden;
+    position: relative;
+    @media (min-width: $breakpoint-tablet) {
+     width: 50%;
+     height: 400px;
+     
+    }
+       @media (min-width: $breakpoint-desktop) {
+    //  position: relative;
+     width: 25%;
+    }
+        
+}
+
+.li-image{
+    width: 100%;
+    height: auto;
+
+   @media (min-width: $breakpoint-tablet) {
+   width: 200%;
+    // position: absolute;
+    // right: 100px;
+        //  overflow: hidden;  
+ }
+
+}
