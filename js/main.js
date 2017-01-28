@@ -1,9 +1,11 @@
 
 $(function(){
+	$('.loading').hide();
 	$('.section').on('change', function(){
 		$('.menu').toggleClass('menu-up').css('height', 'auto');
-		// $().toggleClass('logoscale')
-
+		$('.logo').toggleClass('logoscale');
+			
+			$('.loading').show();
 			$('.list').empty();
 			var catagory = $(this).val();
 
@@ -15,6 +17,7 @@ $(function(){
 
 	
 		.done(function(data){
+			$('.loading').hide();
 		var results = data.results.filter(function(item){
 				return item.multimedia.length;
 		}).splice(0,12);
@@ -30,13 +33,13 @@ $(function(){
 
 			show += '<li class="li-article"><div id="wrapper"><p class="text">'
 			show += main
-			show += '</p></div>'
+			show += '</p><div class="text-bg"></div></div>'
 			show += '<img class ="li-image" src="' 
 			show += img
 			show += '"/></li>'
 		})
 		$finalimage.append(show);
 
-		})
+		}).fail()
 	})
 });

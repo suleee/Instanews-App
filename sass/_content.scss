@@ -1,10 +1,16 @@
-
+.text{
+    color: white;
+    background: linear-gradient(to top, black, rgba(0,0,0,0.5));
+ 
+}
+// .text-bg{}
 .cotainer{
     height: auto;
 }
 
 
 li{
+    
     list-style-type: none;
     }   
 
@@ -12,6 +18,8 @@ li{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;  
+//  justify-content: center;
+//  vertical-align: middle;
     @media (min-width: $breakpoint-tablet) {
     height: 100vh;
 
@@ -22,12 +30,12 @@ li{
 #wrapper{
     position: absolute;
 
-    top: 77%;
+    top: 70%;
   
     width: 100%;
     height: 50%;
-    background-color: black;
-    opacity: 0.5;
+    // background-color: black;
+   
     
     p{
     line-height: 20px;
@@ -37,8 +45,10 @@ li{
 }
 
 .li-article{
-         overflow: hidden;
+    height: 300px;
     position: relative;
+
+//    vertical-align: middle;
     @media (min-width: $breakpoint-tablet) {
      width: 50%;
      height: 400px;
@@ -52,8 +62,10 @@ li{
 }
 
 .li-image{
-    width: 100%;
-    height: auto;
+    width: 150%;
+    //  height: 300px;
+    display: block;
+    margin: 0 auto;
 
    @media (min-width: $breakpoint-tablet) {
    width: 200%;

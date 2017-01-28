@@ -106,9 +106,6 @@ body {
 
 .logo img {
   width: auto; }
-  @media (min-width: 400px) {
-    .logo img {
-      width: 80%; } }
 
 .selector {
   width: 600px;
@@ -125,7 +122,17 @@ span {
   text-transform: uppercase; }
 
 .logoscale {
-  width: 50%; }
+  transform: scale(0.7); }
+
+.loading {
+  width: 20%;
+  position: relative;
+  bottom: 400px;
+  left: 200px; }
+
+.text {
+  color: white;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0.5)); }
 
 .cotainer {
   height: auto; }
@@ -145,17 +152,15 @@ li {
 
 #wrapper {
   position: absolute;
-  top: 77%;
+  top: 70%;
   width: 100%;
-  height: 50%;
-  background-color: black;
-  opacity: 0.5; }
+  height: 50%; }
   #wrapper p {
     line-height: 20px;
     padding: 15px; }
 
 .li-article {
-  overflow: hidden;
+  height: 300px;
   position: relative; }
   @media (min-width: 600px) {
     .li-article {
@@ -166,8 +171,9 @@ li {
       width: 25%; } }
 
 .li-image {
-  width: 100%;
-  height: auto; }
+  width: 150%;
+  display: block;
+  margin: 0 auto; }
   @media (min-width: 600px) {
     .li-image {
       width: 200%; } }
