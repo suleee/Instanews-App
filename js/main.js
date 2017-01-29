@@ -29,7 +29,7 @@ $(function() {
 				article += '<li class="li-article">';
 				article += 	'<a href =';
 				article += 		link
-				article += 	'></a><div></div>'
+				article += 	'></a>'
 				article += 		'<div class="article-wrapper">';
 				article += 			'<div class="text-wrapper">';
 				article += 				'<p>';
