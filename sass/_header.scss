@@ -1,4 +1,4 @@
-// $breakpoint-m: 600px;
+$breakpoint-m: 400px;
 $breakpoint-tablet: 600px;
 $breakpoint-desktop: 1000px;
 
@@ -14,6 +14,9 @@ html{
 body{
     background-color: black;
 }
+span{
+    text-transform: uppercase;
+}
 
 .menu{
     align-content: center;
@@ -22,12 +25,14 @@ body{
     align-items: center;
     justify-content: center;
     padding: 20px;
-  height: 600px;
+    max-width: 600px;
+    height:90vh;
    
-//    @media (min-width: $breakpoint-m) {
-//     //    overflow: hidden;
+   @media (min-width: $breakpoint-m) {
+    //    overflow: hidden;
+    // width: 200px;
     
-//     }
+    }
     @media (min-width: $breakpoint-tablet) {
     
     }
@@ -35,10 +40,10 @@ body{
      justify-content: flex-start;
     }
 }
+
 .logo{
     text-align: center;
     @media (min-width: $breakpoint-tablet) {
-
     }
 }
 
@@ -51,7 +56,7 @@ body{
 }
 
 .selector{
-    width: 600px;
+    width: 50vh;
     height: auto;
     text-align: center;
     @media (min-width: $breakpoint-tablet) {
@@ -63,19 +68,16 @@ body{
     }
 }
 
-span{
-    text-transform: uppercase;
-}
 
 .logoscale{
-   transform: scale(.7);
-
+    transform: scale(0.4);
 }
+
 
 
 .loading{
-    width: 20%;
+    width: 50px;
+    height: 50px;
     position: relative;
-    bottom: 400px;
-    left: 200px;
+    left: 50%;
 }
