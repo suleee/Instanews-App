@@ -97,9 +97,10 @@ span {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  padding: 20px;
-  max-width: 600px;
   height: 90vh; }
+  @media (max-height: 400px) {
+    .menu {
+      max-height: 400px; } }
   @media (min-width: 1000px) {
     .menu {
       -ms-flex-pack: start;
@@ -122,14 +123,20 @@ span {
     .selector {
       text-align: left; } }
 
-.logoscale {
-  transform: scale(0.4); }
-
 .loading {
-  width: 50px;
-  height: 50px;
-  position: relative;
-  left: 50%; }
+  display: none;
+  height: 90px;
+  left: 50%;
+  position: absolute; }
+
+.logo-scale {
+  transform: scale(0.5); }
+
+li {
+  list-style-type: none; }
+
+p {
+  padding: 15px; }
 
 .wrapper {
   display: -ms-flexbox;
@@ -147,9 +154,6 @@ span {
   bottom: 0;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.2); }
-
-li {
-  list-style-type: none; }
 
 @media (min-width: 600px) {
   .list {

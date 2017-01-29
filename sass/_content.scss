@@ -1,9 +1,10 @@
-// .text{
-//     color: white;
-//     background: linear-gradient(to top, black, rgba(0,0,0,0.5));
- 
-// }
-// .text-bg{}
+li {
+    list-style-type: none;
+}
+
+p{
+    padding: 15px;
+}
 
 .wrapper {
     display: flex;
@@ -22,17 +23,7 @@
 }
 
 
-
-
-
-
-
-li {
-    list-style-type: none;
-}
-
 .list {
-    // overflow: hidden;  
     @media (min-width: $breakpoint-tablet) {
         display: flex;
         flex-wrap: wrap;
@@ -44,9 +35,6 @@ li {
     object-fit: cover;
     height: 100%;
     width: 100%;
-    // @media (min-width: $breakpoint-tablet) {
-    //     width: 200%;
-    // }
 }
 
 .li-article{
