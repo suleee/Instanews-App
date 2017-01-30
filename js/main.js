@@ -1,9 +1,11 @@
 
 $(function() {
 
+
 	$('.section').on('change', function() {
 		$('.menu').addClass('menu-up').css('height', 'auto');
 		$('.logo').addClass('logo-scale');
+
 			
 		$('.loading').show();
 		$('.list').empty();
