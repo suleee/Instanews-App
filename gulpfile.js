@@ -3,15 +3,15 @@
 
 //variables
 var gulp = require('gulp'),
-	uglify = require('gulp-uglify'),
-	rename = require('gulp-rename'),
-	browserSync = require('browser-sync'),
-	eslint = require('gulp-eslint'),  
-	sass = require('gulp-sass'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    browserSync = require('browser-sync'),
+    eslint = require('gulp-eslint'),  
+    sass = require('gulp-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     cssnano = require('gulp-cssnano'),
-	plumber = require('gulp-plumber'),
-  	notify = require('gulp-notify');
+    plumber = require('gulp-plumber'),
+    notify = require('gulp-notify');
 
 //error pop up message
 var plumberErrorHandler = {

@@ -18,6 +18,11 @@ span{
     text-transform: uppercase;
 }
 
+h1{
+    font-size: 12px;
+    margin: 10px 0 10px 0;
+}
+
 .menu{
     align-content: center;
     display: flex;
@@ -37,43 +42,30 @@ span{
     }
 }
 
-.logo{
-    text-align: center;
-    @media (min-width: $breakpoint-tablet) {
-    }
-}
 
-.logo img{
-    width: auto;
-    
-    //  @media (min-width: $breakpoint-m) {
-    //  width: 80%;
-    // }
-}
 
 .selector{
-    width: 50vh;
-    height: auto;
+    width: 300px;
+    // height: auto;
     text-align: center;
     @media (min-width: $breakpoint-tablet) {
-   width: 300px;
+        width: 300px;
     }
     @media (min-width: $breakpoint-desktop) {
-  
-     text-align: left;
+        width: 100px;
+        padding-left: 150px;
     }
 }
-
 
 
 .loading{
     display: none;
-    height: 66px;
-    left: 41%;
-    top: 260px;
+    height: 65px;
+    left: 47%;
+    top: 167px;
     position: absolute;
 }
 
 .logo-scale{
-   transform: scale(.5);
+    transform: scale(0.5);  
 }

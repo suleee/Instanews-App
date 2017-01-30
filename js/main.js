@@ -2,8 +2,8 @@
 $(function() {
 
 	$('.section').on('change', function() {
-		$('.menu').toggleClass('menu-up').css('height', 'auto');
-		$('.logo').toggleClass('logo-scale');
+		$('.menu').addClass('menu-up').css('height', 'auto');
+		$('.logo').addClass('logo-scale');
 			
 		$('.loading').show();
 		$('.list').empty();
