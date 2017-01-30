@@ -2,4 +2,8 @@ footer{
    color: #c2c2c2;
    text-align: center;
    margin-top: 5px;
+   font-size: 14px;
+    @media (min-width: $breakpoint-desktop) {
+    text-align: left;
+    }
 }

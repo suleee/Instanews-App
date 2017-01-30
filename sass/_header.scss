@@ -19,53 +19,94 @@ span{
 }
 
 h1{
-    font-size: 12px;
-    margin: 10px 0 10px 0;
+    font-size: 13px;
+    margin: 18px 0 18px 0;
+    @media (min-width: $breakpoint-tablet) {
+        font-size: 15px;
+         margin: 0 0 18px 0;
+    }
+}
+
+form{
+    @media (min-width: $breakpoint-tablet) {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    }
 }
 
 .menu{
-    align-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    height: 90vh;
-   
-   @media (max-height: $breakpoint-m) {
-       max-height: 400px;
-    }
-    @media (min-width: $breakpoint-tablet) {
-    
-    }
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 82vh;
+    padding: 15px;
+
     @media (min-width: $breakpoint-desktop) {
-     justify-content: flex-start;
+        justify-content: flex-start;
+        padding: 20px;
     }
 }
 
-
-
 .selector{
-    width: 300px;
-    // height: auto;
     text-align: center;
+    display: block;
+    width: 300px;
     @media (min-width: $breakpoint-tablet) {
-        width: 300px;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+}
+
+.logo{
+    // width: 300px;
+    @media (min-width: $breakpoint-tablet) {
+        flex: 0 1 25%;
+        align-self: center;
+        margin-right: 10px;
+
     }
     @media (min-width: $breakpoint-desktop) {
-        width: 100px;
-        padding-left: 150px;
+        width: 210px;
+        text-align: right;
+        margin: 10px;
     }
 }
 
 
 .loading{
     display: none;
-    height: 65px;
+    height: 50px;
     left: 47%;
-    top: 167px;
+    top: 201px;
     position: absolute;
 }
 
 .logo-scale{
-    transform: scale(0.5);  
+    width: 200px;
+    height: 120px;
+    @media (min-width: $breakpoint-tablet) {
+        width:70px;
+        height: 70px;
+    }
 }
+
+.section{
+    width: 125px;
+    height: 27px;
+    font-size: 18px;
+
+    }
+
+// section:active{
+//     outline:none;
+//     border: none;
+//     box-shadow: none;
+// }
