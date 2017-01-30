@@ -9,6 +9,8 @@ $(function() {
 		$('.list').empty();
 		var catagory = $(this).val();
 
+		
+
 		var url = 'https://api.nytimes.com/svc/topstories/v2/' + catagory + '.json';
 		url += '?' + $.param({'api-key': '6689b79959214fb6b3222a74112dbce3'});
 		
@@ -16,6 +18,8 @@ $(function() {
 			var results = data.results.filter(function(item){
 				return item.multimedia.length;
 			}).splice(0,12);
+
+
 
 			var $finalimage = $('.list');
 			var article = '';
@@ -43,6 +47,7 @@ $(function() {
 				article += '</li>';
 			});
 			$finalimage.append(article);
+			
 		}).fail(function() {
 			$('.message').append('Sorry there was a problem.');	
 		}).always(function() {

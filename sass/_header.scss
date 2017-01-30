@@ -3,7 +3,6 @@ $breakpoint-tablet: 600px;
 $breakpoint-desktop: 1000px;
 
 
-
 html{
    font-size: 16px;
    color: #ffffff;
@@ -20,7 +19,7 @@ span{
 
 h1{
     font-size: 13px;
-    margin: 18px 0 18px 0;
+    margin: 17px 0 17px 0;
     @media (min-width: $breakpoint-tablet) {
         font-size: 15px;
          margin: 0 0 18px 0;
@@ -66,17 +65,25 @@ form{
 }
 
 .logo{
-    // width: 300px;
+    width: 300px;
+    text-align: center;
     @media (min-width: $breakpoint-tablet) {
         flex: 0 1 25%;
         align-self: center;
         margin-right: 10px;
-
     }
     @media (min-width: $breakpoint-desktop) {
-        width: 210px;
-        text-align: right;
-        margin: 10px;
+        flex: 0 1 25%;
+        text-align: left;
+    }
+}
+.logo img{
+    width: 75%;
+    @media (min-width: $breakpoint-tablet) {
+        width: 90%;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        width: 75%;
     }
 }
 
@@ -90,17 +97,21 @@ form{
 }
 
 .logo-scale{
-    width: 200px;
-    height: 120px;
+    width: 250px;
+    height: 180px;
     @media (min-width: $breakpoint-tablet) {
         width:70px;
         height: 70px;
     }
+    @media (min-width: $breakpoint-desktop) {
+    text-align: left;
+    }
+    
 }
 
 .section{
-    width: 125px;
-    height: 27px;
+    width: 127px;
+    height: 26px;
     font-size: 18px;
 
     }

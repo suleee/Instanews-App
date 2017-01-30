@@ -1,9 +1,18 @@
 footer{
-   color: #c2c2c2;
-   text-align: center;
-   margin-top: 5px;
-   font-size: 14px;
+    color: #c2c2c2;
+    text-align: center;
+    margin-top: 6px;
+    font-size: 15px;
     @media (min-width: $breakpoint-desktop) {
-    text-align: left;
+        text-align: left;
+        font-size: 14px;
+    }
+}
+
+
+p{
+    padding: 15px;
+    @media (min-width: $breakpoint-desktop) {
+        padding-left: 30px;
     }
 }

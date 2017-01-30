@@ -2,25 +2,22 @@ li {
     list-style-type: none;
 }
 
-p{
-    padding: 15px;
-}
 
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    border: 1px solid red;
-    color: white;
-    position: relative;
-}
+// .wrapper {
+//     display: flex;
+//     flex-wrap: wrap;
+//     border: 1px solid red;
+//     color: white;
+//     position: relative;
+// }
 
-.wrapper p {
-    padding: 20px;
-    flex: 1 1 100%;
-    bottom: 0;
-    position: absolute; 
-    background-color: rgba(0,0,0,0.2);
-}
+// .wrapper p {
+//     padding: 20px;
+//     flex: 1 1 100%;
+//     bottom: 0;
+//     position: absolute; 
+//     background-color: rgba(0,0,0,0.2);
+// }
 
 
 .list {
@@ -54,7 +51,10 @@ p{
 }
 
 .text-wrapper {
+    // display: none;
     background: rgba(0,0,0,0.7);
     position: absolute;
     bottom: 0;
+    width: 100%;
 }
+
