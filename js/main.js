@@ -1,17 +1,14 @@
 
 $(function() {
-
+	$('#section').selectric();
 
 	$('.section').on('change', function() {
 		$('.menu').addClass('menu-up').css('height', 'auto');
 		$('.logo').addClass('logo-scale');
 
-			
 		$('.loading').show();
 		$('.list').empty();
 		var catagory = $(this).val();
-
-		
 
 		var url = 'https://api.nytimes.com/svc/topstories/v2/' + catagory + '.json';
 		url += '?' + $.param({'api-key': '6689b79959214fb6b3222a74112dbce3'});
@@ -34,9 +31,8 @@ $(function() {
 
 				article += '<li class="li-article">';
 				article += 	'<a href =';
-				article += 		link
-				article += 	'></a>'
-				article += 		'<div class="article-wrapper">';
+				article += 		link;
+				article += 		'><div class="article-wrapper">';
 				article += 			'<div class="text-wrapper">';
 				article += 				'<p>';
 				article += 					main;
@@ -44,8 +40,8 @@ $(function() {
 				article += 			'</div>';
 				article +=				'<img class ="li-image" src="';
 				article += 				img;
-				article += 			'"alt="image"/>';
-				article +=		'</div>';
+				article += 			'" alt="image"/>';
+				article +=		'</div></a>';
 				article += '</li>';
 			});
 			$finalimage.append(article);

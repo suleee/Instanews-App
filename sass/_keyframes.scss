@@ -1,12 +1,30 @@
 
-@keyframes logo-move{
- from{top: 0; left: 0;}
- to{ top:100px;  }
+@keyframes logo-animation{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(0.3rem,-0.1rem);
+    }
+}
+
+@keyframes tabletlogo-animation{
+    0%{
+        transform: translate(0,0);
+    }
+    100%{
+        transform: translate(-0.3rem,0.1rem);
+    }
 }
 
 
-.logotoggle{
-    animation: logo-move all .5s ease-in-out .5s;;
-    //  transition: all .5s ease-in-out .5s;
-
+@keyframes textwrappershow {
+    0%{
+    transform: translate(0, 100px);
+    max-height: 0%;
+    }
+    100%{
+    transform: translate(0, 0);
+    max-height: 100%;
+    }
 }
