@@ -2,9 +2,9 @@
 header css
 --------------------------------------------------------*/
 
-$breakpoint-m: 400px;
-$breakpoint-tablet: 600px;
-$breakpoint-desktop: 1000px;
+$breakpoint-m: 25rem;
+$breakpoint-tablet: 37.5rem;
+$breakpoint-desktop: 62.5rem;
 
 
 html{
@@ -88,13 +88,13 @@ a:hover{
         -ms-grid-row-align: center;
         align-self: center;
     text-align: center;
-    margin: 0 0 5px 0;
+    margin: 0 0 .31rem 0;
 
     @media (min-width: $breakpoint-tablet) {
         -ms-flex-item-align: center;
             -ms-grid-row-align: center;
             align-self: center;
-        margin-right: 10px;
+        margin-right: 0.625rem;
         -webkit-box-flex: 0;
             -ms-flex: 0 1 25%;
                 flex: 0 1 25%;
@@ -110,23 +110,23 @@ a:hover{
         width: 90%;
     }
     @media (min-width: $breakpoint-desktop) {
-        width: 220px;
+        width: 13.75rem;
     }
 }
 
 
 .loading{
     display: none;
-    height: 50px;
+    height: 3.125rem;
     left: 47%;
-    top: 201px;
+    top: 12.56rem;
     position: absolute;
 }
 
 .section{
-    width: 127px;
-    height: 26px;
-    font-size: 18px;
+    width: 7.94rem;
+    height: 1.625rem;
+    font-size: 1.125rem;
 }
 
 
