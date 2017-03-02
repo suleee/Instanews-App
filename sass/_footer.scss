@@ -2,7 +2,7 @@
 footer css
 --------------------------------------------------------*/
 
-.footer{
+.footer {
     color: #c2c2c2;
     text-align: center;
     margin-top: 6px;
@@ -11,10 +11,10 @@ footer css
         text-align: left;
         font-size: 14px;
     }
-    p{
-    padding: 15px;
-    @media (min-width: $breakpoint-desktop) {
-        padding-left: 30px;
+    p {
+        padding: 15px;
+        @media (min-width: $breakpoint-desktop) {
+            padding-left: 30px;
         }
     }
 }

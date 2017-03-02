@@ -5,72 +5,70 @@ header css
 $breakpoint-m: 25rem;
 $breakpoint-tablet: 37.5rem;
 $breakpoint-desktop: 62.5rem;
-
-
-html{
-   font-size: 16px;
-   color: #ffffff;
-   font-family: 'open_sans_web', sans-serif;
-   font-weight: lighter;   
+html {
+    font-size: 16px;
+    color: #ffffff;
+    font-family: 'open_sans_web', sans-serif;
+    font-weight: lighter;
 }
 
-body{
+body {
     background-color: black;
 }
-span{
+
+span {
     text-transform: uppercase;
 }
 
-h1{
+h1 {
     font-size: 0.81rem;
     margin: 0 0 1.06rem 0;
     @media (min-width: $breakpoint-tablet) {
         font-size: 0.94rem;
-         margin: 0 0 1.12rem 0;
+        margin: 0 0 1.12rem 0;
     }
 }
 
-form{
+form {
     @media (min-width: $breakpoint-tablet) {
-    -ms-flex-item-align: center;
+        -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     }
 }
 
-a:hover{
+a:hover {
     color: white;
 }
-.menu{
+
+.menu {
     -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     height: 82vh;
     padding: 0.94rem;
-
     @media (min-width: $breakpoint-desktop) {
         -webkit-box-pack: start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
         padding: 1.25rem;
     }
 }
 
-
-.form{
-     -ms-flex-item-align: center;
-         -ms-grid-row-align: center;
-         align-self: center;
+.form {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
 }
 
-.selector{
+.selector {
     text-align: center;
     display: block;
     width: 25rem;
@@ -81,30 +79,30 @@ a:hover{
     }
 }
 
-.logo{
+.logo {
     -webkit-animation: logo-animation 1.5s forwards;
-            animation: logo-animation 1.5s forwards;
+    animation: logo-animation 1.5s forwards;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center;
     text-align: center;
     margin: 0 0 .31rem 0;
-
     @media (min-width: $breakpoint-tablet) {
         -ms-flex-item-align: center;
-            -ms-grid-row-align: center;
-            align-self: center;
+        -ms-grid-row-align: center;
+        align-self: center;
         margin-right: 0.625rem;
         -webkit-box-flex: 0;
-            -ms-flex: 0 1 25%;
-                flex: 0 1 25%;
+        -ms-flex: 0 1 25%;
+        flex: 0 1 25%;
         animation: tabletlogo-animation 1.5s forwards;
     }
     @media (min-width: $breakpoint-desktop) {
         text-align: left;
     }
 }
-.logo img{
+
+.logo img {
     width: 100%;
     @media (min-width: $breakpoint-tablet) {
         width: 90%;
@@ -114,8 +112,7 @@ a:hover{
     }
 }
 
-
-.loading{
+.loading {
     display: none;
     height: 3.125rem;
     left: 47%;
@@ -123,16 +120,16 @@ a:hover{
     position: absolute;
 }
 
-.section{
+.section {
     width: 7.94rem;
     height: 1.625rem;
     font-size: 1.125rem;
 }
 
 
+/*js*/
 
-/*js*/ 
-.logo-scale{
+.logo-scale {
     width: 150px;
     height: 180px;
     @media (min-width: $breakpoint-tablet) {
@@ -140,21 +137,19 @@ a:hover{
         height: 70px;
     }
     @media (min-width: $breakpoint-desktop) {
-    text-align: left;
-    }   
-}
-
-.menu-up{
-    padding: 18px;
-    margin-bottom: 28px;
-    @media (min-width: $breakpoint-tablet) {
-    padding: 30px;
-    margin-right: 28%;
-    margin-bottom: 0px;
-    } 
-    @media (min-width: $breakpoint-desktop) {
-    padding: 30px;
+        text-align: left;
     }
 }
 
-
+.menu-up {
+    padding: 18px;
+    margin-bottom: 28px;
+    @media (min-width: $breakpoint-tablet) {
+        padding: 30px;
+        margin-right: 28%;
+        margin-bottom: 0px;
+    }
+    @media (min-width: $breakpoint-desktop) {
+        padding: 30px;
+    }
+}

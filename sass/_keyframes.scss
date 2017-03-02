@@ -2,32 +2,31 @@
 animation css
 --------------------------------------------------------*/
 
-@keyframes logo-animation{
-    0%{
-        transform: translate(0,0);
+@keyframes logo-animation {
+    0% {
+        transform: translate(0, 0);
     }
-    100%{
-        transform: translate(0.3rem,-0.1rem);
-    }
-}
-
-@keyframes tabletlogo-animation{
-    0%{
-        transform: translate(0,0);
-    }
-    100%{
-        transform: translate(-0.3rem,0.1rem);
+    100% {
+        transform: translate(0.3rem, -0.1rem);
     }
 }
 
+@keyframes tabletlogo-animation {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(-0.3rem, 0.1rem);
+    }
+}
 
 @keyframes textwrappershow {
-    0%{
-    transform: translate(0, 100px);
-    max-height: 0%;
+    0% {
+        transform: translate(0, 100px);
+        max-height: 0%;
     }
-    100%{
-    transform: translate(0, 0);
-    max-height: 100%;
+    100% {
+        transform: translate(0, 0);
+        max-height: 100%;
     }
 }
