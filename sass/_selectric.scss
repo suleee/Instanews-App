@@ -16,8 +16,7 @@
 }
 
 .selectric {
-  // border: 1px solid white;
-  background: #FFFABE;
+  background: $color__yellow;
   position: relative;
   border-radius: 10px;
   width: 150px;
@@ -47,7 +46,7 @@
   margin: auto;
   width: 38px;
   height: 38px;
-  color: #444444;
+  color: $color__grey;
   text-align: center;
   font: 0/0 a;
   font-weight: bold;
@@ -65,7 +64,7 @@
   width: 0;
   height: 0;
   border: 4px solid transparent;
-  border-top-color: #444444;
+  border-top-color: $color__grey;
   border-bottom: none;
 }
 
@@ -74,15 +73,15 @@
 }
 
 .selectric-hover .selectric {
-  border-color: #c4c4c4;
+  border-color: $color__lightgrey;
 }
 
 .selectric-hover .selectric .button {
-  color: #c4c4c4;
+  color: $color__lightgrey;
 }
 
 .selectric-hover .selectric .button:after {
-  border-top-color: #c4c4c4;
+  border-top-color: $color__lightgrey;
 }
 
 .selectric-open {
@@ -90,8 +89,8 @@
 }
 
 .selectric-open .selectric {
-  border-color: #c4c4c4;
-  background: #FFFABE;
+  border-color: $color__lightgrey;
+  background: $color__yellow;
 }
 
 .selectric-open .selectric-items {
@@ -170,8 +169,8 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background: #FFFABE;
-  border: 1px solid #C4C4C4;
+  background: $color__yellow;
+  border: 1px solid $color__lightgrey;
   z-index: -1;
   box-shadow: 0 0 10px -6px;
 }
@@ -199,14 +198,12 @@
 .selectric-items li {
   display: block;
   padding: 8px;
-  // border-top: 1px solid #FFD06A;
-  // border-bottom: 1px solid #EEE;
   color: #666;
   cursor: pointer;
 }
 
 .selectric-items li.selected {
-  background: #FFD06A;
+  background: $color__darkyellow;
   color: #444;
 }
 
@@ -216,7 +213,7 @@
 }
 
 .selectric-items li:hover {
-  background: #FFD06A;
+  background: $color__darkyellow;
   color: #444;
 }
 

@@ -8,7 +8,7 @@ $breakpoint-desktop: 62.5rem;
 html {
     font-size: 16px;
     color: #ffffff;
-    font-family: 'open_sans_web', sans-serif;
+    font-family: $font__main, sans-serif;
     font-weight: lighter;
 }
 

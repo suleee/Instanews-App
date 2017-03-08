@@ -5,13 +5,13 @@
     }
 }
 
-@mixin tablet{
+@mixin tablet {
     @media screen and (min-width: $tablet-width) {
         @content;
     }
 }
 
-@mixin desktop{
+@mixin desktop {
     @media screen and (min-width: $desktop-width) {
         @content;
     }
