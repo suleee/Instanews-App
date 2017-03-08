@@ -118,6 +118,9 @@ a:hover {
     left: 47%;
     top: 12.56rem;
     position: absolute;
+    @media (min-width: $breakpoint-tablet) {
+        top: 114px;
+    }
 }
 
 .section {

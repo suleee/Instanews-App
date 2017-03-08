@@ -10,6 +10,10 @@ footer css
     @media (min-width: $breakpoint-desktop) {
         text-align: left;
         font-size: 14px;
+        margin-top: 25px;
+    }
+    @media (min-width: $breakpoint-tablet) {
+        margin-top: 25px;
     }
     p {
         padding: 15px;
