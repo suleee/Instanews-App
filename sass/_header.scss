@@ -133,11 +133,11 @@ a:hover {
 /*js*/
 
 .logo-scale {
-    width: 150px;
-    height: 180px;
+    width: 9.4rem;
+    height: 11.25rem;
     @media (min-width: $breakpoint-tablet) {
-        width:70px;
-        height: 70px;
+        width: 4.4rem;
+        height: 4.4rem;
     }
     @media (min-width: $breakpoint-desktop) {
         text-align: left;
@@ -145,14 +145,14 @@ a:hover {
 }
 
 .menu-up {
-    padding: 18px;
-    margin-bottom: 28px;
+    padding: 1.13rem;
+    margin-bottom: 1.75rem;
     @media (min-width: $breakpoint-tablet) {
-        padding: 30px;
+        padding: 1.88rem;
         margin-right: 28%;
         margin-bottom: 0px;
     }
     @media (min-width: $breakpoint-desktop) {
-        padding: 30px;
+        padding: 1.9rem;
     }
 }

@@ -5,20 +5,20 @@ footer css
 .footer {
     color: $color__footer;
     text-align: center;
-    margin-top: 6px;
-    font-size: 15px;
+    margin-top: .375rem;
+    font-size: 0.94rem;
     @media (min-width: $breakpoint-desktop) {
         text-align: left;
-        font-size: 14px;
-        margin-top: 25px;
+        font-size: 0.875rem;
+        margin-top: 1.56rem;
     }
     @media (min-width: $breakpoint-tablet) {
-        margin-top: 25px;
+        margin-top: 1.56rem;
     }
     p {
-        padding: 15px;
+        padding: 0.94rem;
         @media (min-width: $breakpoint-desktop) {
-            padding-left: 30px;
+            padding-left: 1.875rem;
         }
     }
 }
